@@ -1,0 +1,156 @@
+ :root{
+    --colorform1: rgba(130, 170, 170, 0.644);
+    --colorform2:  rgba(13, 65, 65, 0.877);
+    --colorform3:  rgb(10, 223, 223);
+ }
+body{
+  background: linear-gradient(
+     10deg,
+     rgb(49, 49, 49),
+      rgb(255, 255, 255) 90%
+  );
+}
+
+.div1{
+  display: flex;
+  justify-content: center; 
+  
+}
+
+.h2{
+    color: rgba(0, 0, 0, 0.5);
+    position:absolute;
+    bottom: 80%;;
+    font-size: 10vh;
+}
+.form{
+    position: absolute;
+    top: 13%;
+    height:55%;
+    border: 0.9vh solid rgba(0, 0, 0, 0.308);
+    width: 50vh;
+    background: linear-gradient(
+        900deg,
+      var(--colorform1) 1%,
+      var(--colorform2) 50%,
+      var(--colorform1) 65%
+    );
+}
+.div_form{
+    position: relative;
+    margin: 3vh;
+    padding:0.1vh;
+    bottom: 2vh;
+}
+.label_form{
+    color: aliceblue;
+    font-size: 3vh;
+}
+.input_form{
+    background-color: rgba(250, 235, 215, 0.315);
+    
+    border:transparent;
+    margin-left:  40%;
+    font-size: 2.3vh ;
+}
+.input_form:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+.buttom_create{
+  position: absolute;
+  left: 5%;
+  width:90%;
+  height:10%;
+  bottom: 2%;
+  border-radius: 1vh 1vh 1vh 1vh;
+  border: 0.1vh solid black;
+
+}
+.buttom_create:hover{
+    background-color: rgba(250, 235, 215, 0.315);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.div2{
+    position:absolute;
+    top:78%;    
+    margin: 0 auto;
+}
+.article_card{
+    position:relative;
+    float: left;
+    margin-left: 2vh;
+    margin-right:2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height:40vh;
+    width:45vh;
+    border-radius: 1vh 1vh 1vh 1vh;
+    border: 0.9vh solid rgba(0, 0, 0, 0.308);
+    background: linear-gradient(
+        90deg,
+      var(--colorform1) 1%,
+      var(--colorform2) 50%,
+      var(--colorform1) 80%
+    );
+}
+.article_card:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+.h3_card{
+    position: absolute;
+    font-size: 5.5vh;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+    left: 5vh;
+    margin: 3 auto;
+}
+.ul_card{
+    position: absolute;
+    font-size: 3vh;
+    bottom: 9vh;
+    list-style-type: none;
+    
+}
+.li_card{
+  margin-top: 3vh;
+}
+.span_card{
+   color: antiquewhite;
+
+}
+.span_card_2{
+    text-decoration: underline;
+}
+.buttom_cared_delete{
+    position: absolute;
+    margin-top:34vh;
+    margin-left: 1vh;
+    font-size: 2vh;
+    width: 18vh;
+    border-radius: 1vh 1vh 1vh 1vh;
+    border: 0.2vh solid black ;
+    height:5vh;
+}
+.buttom_card_edit{
+    position: absolute;
+    margin-top:34vh;
+    margin-left: 26vh;
+    font-size: 2vh;
+    width: 18vh;
+    border-radius: 1vh 1vh 1vh 1vh;
+    border: 0.2vh solid black ;
+    height:5vh;
+}
+.buttom_cared_delete:hover{
+    background-color: rgba(250, 235, 215, 0.315);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.buttom_card_edit:hover{
+    background-color: rgba(250, 235, 215, 0.315);   
+    cursor: pointer;
+    transition: transform 0.2s;
+}
