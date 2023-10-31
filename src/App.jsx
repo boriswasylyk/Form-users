@@ -9,13 +9,13 @@ import UserCard from './components/UserCard';
 
 function App() {
   
-  const baseUrl = `https://users-crud.academlo.tech`
+  const baseUrl = `https://users-backend-dev-gmqm.3.us-1.fl0.io`
   const [ users, getUsers, createUser, deleteUser, updateUser ] = useFetch(baseUrl)
   const [infoUpdate, setInfoUpdate] = useState()
 
 
   useEffect(() => {
-    getUsers(`/users`)
+    getUsers(`/user`)
   }, [])
 
   return (

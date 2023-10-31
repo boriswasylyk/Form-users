@@ -11,31 +11,23 @@ const FormUsers = ({createUser, infoUpdate, updateUser, setInfoUpdate }) => {
 
     const submit = data => {
       if (infoUpdate) {
-        updateUser('/users', infoUpdate.id, data )
+        updateUser('/user', infoUpdate.id, data )
         setInfoUpdate()
       }else{
-         createUser('/users', data)   
+         createUser('/user', data)   
       }
-       createUser('/users', data)
+       createUser('/user', data)
        reset({
-        email: "",
-        password: "",
-        first_name: "",
-        last_name: "",
+         first_name: "",
+         last_name: "",
+         email: "",
+         password: "",
         birthday: ""
        })
     }
 
   return (
     <form class="form" onSubmit={handleSubmit(submit)}>
-      <div class="div_form" >
-        <label class="label_form" htmlFor="email">Email</label>
-        <input class="input_form" {...register('email')}type="email" id="email" placeholder="Email" />
-      </div>
-      <div class="div_form">
-        <label class="label_form" htmlFor="password">Password</label>
-        <input class="input_form"  {...register('password')} type="password" id="password" placeholder="Password" />
-      </div>
       <div class="div_form">
         <label class="label_form" htmlFor="first_name">First name</label>
         <input class="input_form"  {...register('first_name')}type="text" id="first_name" placeholder="First Name"/>
@@ -43,6 +35,14 @@ const FormUsers = ({createUser, infoUpdate, updateUser, setInfoUpdate }) => {
       <div class="div_form">
         <label class="label_form" htmlFor="last_name">Last name</label>
         <input class="input_form"  {...register('last_name')}type="text" id="last_name" placeholder="Last Name"/>
+      </div>
+      <div class="div_form" >
+        <label class="label_form" htmlFor="email">Email</label>
+        <input class="input_form" {...register('email')}type="email" id="email" placeholder="Email" />
+      </div>
+      <div class="div_form">
+        <label class="label_form" htmlFor="password">Password</label>
+        <input class="input_form"  {...register('password')} type="password" id="password" placeholder="Password" />
       </div>
       <div class="div_form">
         <label class="label_form" htmlFor="birthday">Birthday</label>
